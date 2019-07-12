@@ -64,3 +64,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'activeadmin'
 gem 'devise'
+
+# https://github.com/reactjs/react-rails
+gem 'webpacker'
+gem 'react-rails'
