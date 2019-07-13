@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>HPDRailsCode</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>HPDRailsCode</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <!-- application.html.erb in Head tag below turbolinks -->
-    <%= javascript_pack_tag 'application' %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <!-- application.html.erb in Head tag below turbolinks -->
+  <%= javascript_pack_tag 'application' %>
 
-  </head>
+</head>
 
-  <body>
-     <%= react_component("HelloWorld", { greeting: "Hello from react-rails." }) %>
-  </body>
+<body>
+我是application.html.erb开头
+<%= yield %>
+我是application.html.erb结尾
+</body>
 </html>
