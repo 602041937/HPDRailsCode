@@ -24,8 +24,8 @@ ActiveAdmin.register Book do
   end
 
   collection_action :book_list_page do
-    @book_list = Book.first
-    render 'admin/book/book_list_page', {book_list: @book_list}
+    @book_list = Book.all
+    render 'admin/book/book_list_page'
   end
 
   collection_action :book_create, method: :post do
